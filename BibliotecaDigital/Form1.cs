@@ -149,7 +149,22 @@ namespace BibliotecaDigital
 
         private void btnBuscarDescripcion_Click(object sender, EventArgs e)
         {
+            string palabraClave = txtDescripcion.Text.Trim().ToLower();
+            lstResultadosDescripcion.Items.Clear();
 
+            if (string.IsNullOrEmpty(palabraClave)) return;
+
+            foreach (var libro in listaLibros)
+            {
+                // Verificamos si la descripción contiene la palabra clave
+                if (libro.Descripcion.ToLower().Contains(palabraClave))
+                {
+                    lstResultadosDescripcion.Items.Add($"{libro.Titulo}: ...{palabraClave}...");
+                }
+            }
+
+            if (lstResultadosDescripcion.Items.Count == 0)
+                lstResultadosDescripcion.Items.Add("No hay coincidencias.");
         }
     }
 }
