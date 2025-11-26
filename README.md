@@ -16,7 +16,6 @@ Este repositorio contiene el código fuente de un prototipo funcional para el si
 - [Tecnologías Utilizadas](#-tecnologías-utilizadas)
 - [Instalación y Uso](#-instalación-y-uso)
 - [Estructura del Proyecto](#-estructura-del-proyecto)
-- [Autores](#-autores)
 
 ---
 
