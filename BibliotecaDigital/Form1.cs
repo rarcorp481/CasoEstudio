@@ -57,7 +57,33 @@ namespace BibliotecaDigital
 
         private void btnBusquedaLineal_Click(object sender, EventArgs e)
         {
-            
+            string tituloBusqueda = txtBusquedaLineal.Text.Trim();
+
+            if (string.IsNullOrEmpty(tituloBusqueda))
+            {
+                MessageBox.Show("Por favor ingrese un título.");
+                return;
+            }
+
+            Libro encontrado = null;
+            int iteraciones = 0;
+
+            // Recorremos uno por uno hasta encontrar coincidencia
+            for (int i = 0; i < listaLibros.Count; i++)
+            {
+                iteraciones++;
+                // Comparación ignorando mayúsculas/minúsculas
+                if (listaLibros[i].Titulo.Equals(tituloBusqueda, StringComparison.OrdinalIgnoreCase))
+                {
+                    encontrado = listaLibros[i];
+                    break;
+                }
+            }
+
+            if (encontrado != null)
+                lblResultadoLineal.Text = $"Encontrado: '{encontrado.Titulo}' ({encontrado.AnioPublicacion})\nIteraciones: {iteraciones}";
+            else
+                lblResultadoLineal.Text = $"No se encontró el libro.\nIteraciones: {iteraciones}";
         }
 
         private void btnBusquedaBinaria_Click(object sender, EventArgs e)
