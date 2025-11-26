@@ -127,14 +127,24 @@ namespace BibliotecaDigital
                 lblResultadoBinaria.Text = $"Autor no encontrado en la base de datos.\nPasos realizados: {iteraciones}";
         }
 
-        private void btnOrdenamientoBurbuja_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnAnalizarAnio_Click(object sender, EventArgs e)
         {
+            if (listaLibros.Count == 0) return;
 
+            Libro masAntiguo = listaLibros[0];
+            Libro masReciente = listaLibros[0];
+
+            foreach (var libro in listaLibros)
+            {
+                if (libro.AnioPublicacion < masAntiguo.AnioPublicacion)
+                    masAntiguo = libro;
+
+                if (libro.AnioPublicacion > masReciente.AnioPublicacion)
+                    masReciente = libro;
+            }
+
+            lblLibroAntiguo.Text = $"Más Antiguo:\n{masAntiguo.Titulo} ({masAntiguo.AnioPublicacion})";
+            lblLibroReciente.Text = $"Más Reciente:\n{masReciente.Titulo} ({masReciente.AnioPublicacion})";
         }
 
         private void btnBuscarDescripcion_Click(object sender, EventArgs e)

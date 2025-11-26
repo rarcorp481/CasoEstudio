@@ -17,384 +17,408 @@
 
         private void InitializeComponent()
         {
-            this.tabControlPrincipal = new System.Windows.Forms.TabControl();
-            this.tabDatos = new System.Windows.Forms.TabPage();
-            this.grpAutores = new System.Windows.Forms.GroupBox();
-            this.dgvAutores = new System.Windows.Forms.DataGridView();
-            this.grpLibros = new System.Windows.Forms.GroupBox();
-            this.dgvLibros = new System.Windows.Forms.DataGridView();
-            this.tabLineal = new System.Windows.Forms.TabPage();
-            this.lblResultadoLineal = new System.Windows.Forms.Label();
-            this.btnBusquedaLineal = new System.Windows.Forms.Button();
-            this.txtBusquedaLineal = new System.Windows.Forms.TextBox();
-            this.lblInstruccionLineal = new System.Windows.Forms.Label();
-            this.tabBinaria = new System.Windows.Forms.TabPage();
-            this.lblNotaBinaria = new System.Windows.Forms.Label();
-            this.lblResultadoBinaria = new System.Windows.Forms.Label();
-            this.btnBusquedaBinaria = new System.Windows.Forms.Button();
-            this.txtBusquedaBinaria = new System.Windows.Forms.TextBox();
-            this.lblInstruccionBinaria = new System.Windows.Forms.Label();
-            this.tabAnalisis = new System.Windows.Forms.TabPage();
-            this.btnAnalizarAnio = new System.Windows.Forms.Button();
-            this.grpResultadosAnalisis = new System.Windows.Forms.GroupBox();
-            this.lblLibroReciente = new System.Windows.Forms.Label();
-            this.lblLibroAntiguo = new System.Windows.Forms.Label();
-            this.tabDescripcion = new System.Windows.Forms.TabPage();
-            this.lstResultadosDescripcion = new System.Windows.Forms.ListBox();
-            this.btnBuscarDescripcion = new System.Windows.Forms.Button();
-            this.txtDescripcion = new System.Windows.Forms.TextBox();
-            this.lblInstruccionDesc = new System.Windows.Forms.Label();
-            this.tabControlPrincipal.SuspendLayout();
-            this.tabDatos.SuspendLayout();
-            this.grpAutores.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvAutores)).BeginInit();
-            this.grpLibros.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvLibros)).BeginInit();
-            this.tabLineal.SuspendLayout();
-            this.tabBinaria.SuspendLayout();
-            this.tabAnalisis.SuspendLayout();
-            this.grpResultadosAnalisis.SuspendLayout();
-            this.tabDescripcion.SuspendLayout();
-            this.SuspendLayout();
+            tabControlPrincipal = new TabControl();
+            tabDatos = new TabPage();
+            grpAutores = new GroupBox();
+            dgvAutores = new DataGridView();
+            grpLibros = new GroupBox();
+            dgvLibros = new DataGridView();
+            tabLineal = new TabPage();
+            lblResultadoLineal = new Label();
+            btnBusquedaLineal = new Button();
+            txtBusquedaLineal = new TextBox();
+            lblInstruccionLineal = new Label();
+            tabBinaria = new TabPage();
+            lblNotaBinaria = new Label();
+            lblResultadoBinaria = new Label();
+            btnBusquedaBinaria = new Button();
+            txtBusquedaBinaria = new TextBox();
+            lblInstruccionBinaria = new Label();
+            tabAnalisis = new TabPage();
+            btnAnalizarAnio = new Button();
+            grpResultadosAnalisis = new GroupBox();
+            lblLibroReciente = new Label();
+            lblLibroAntiguo = new Label();
+            tabDescripcion = new TabPage();
+            lstResultadosDescripcion = new ListBox();
+            btnBuscarDescripcion = new Button();
+            txtDescripcion = new TextBox();
+            lblInstruccionDesc = new Label();
+            tabControlPrincipal.SuspendLayout();
+            tabDatos.SuspendLayout();
+            grpAutores.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dgvAutores).BeginInit();
+            grpLibros.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dgvLibros).BeginInit();
+            tabLineal.SuspendLayout();
+            tabBinaria.SuspendLayout();
+            tabAnalisis.SuspendLayout();
+            grpResultadosAnalisis.SuspendLayout();
+            tabDescripcion.SuspendLayout();
+            SuspendLayout();
             // 
             // tabControlPrincipal
             // 
-            this.tabControlPrincipal.Controls.Add(this.tabDatos);
-            this.tabControlPrincipal.Controls.Add(this.tabLineal);
-            this.tabControlPrincipal.Controls.Add(this.tabBinaria);
-            this.tabControlPrincipal.Controls.Add(this.tabAnalisis);
-            this.tabControlPrincipal.Controls.Add(this.tabDescripcion);
-            this.tabControlPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControlPrincipal.Location = new System.Drawing.Point(0, 0);
-            this.tabControlPrincipal.Name = "tabControlPrincipal";
-            this.tabControlPrincipal.SelectedIndex = 0;
-            this.tabControlPrincipal.Size = new System.Drawing.Size(800, 500);
-            this.tabControlPrincipal.TabIndex = 0;
+            tabControlPrincipal.Controls.Add(tabDatos);
+            tabControlPrincipal.Controls.Add(tabLineal);
+            tabControlPrincipal.Controls.Add(tabBinaria);
+            tabControlPrincipal.Controls.Add(tabAnalisis);
+            tabControlPrincipal.Controls.Add(tabDescripcion);
+            tabControlPrincipal.Dock = DockStyle.Fill;
+            tabControlPrincipal.Location = new Point(0, 0);
+            tabControlPrincipal.Margin = new Padding(3, 4, 3, 4);
+            tabControlPrincipal.Name = "tabControlPrincipal";
+            tabControlPrincipal.SelectedIndex = 0;
+            tabControlPrincipal.Size = new Size(914, 667);
+            tabControlPrincipal.TabIndex = 0;
             // 
             // tabDatos
             // 
-            this.tabDatos.Controls.Add(this.grpAutores);
-            this.tabDatos.Controls.Add(this.grpLibros);
-            this.tabDatos.Location = new System.Drawing.Point(4, 24);
-            this.tabDatos.Name = "tabDatos";
-            this.tabDatos.Padding = new System.Windows.Forms.Padding(10);
-            this.tabDatos.Size = new System.Drawing.Size(792, 472);
-            this.tabDatos.TabIndex = 0;
-            this.tabDatos.Text = "Base de Datos";
-            this.tabDatos.UseVisualStyleBackColor = true;
+            tabDatos.Controls.Add(grpAutores);
+            tabDatos.Controls.Add(grpLibros);
+            tabDatos.Location = new Point(4, 29);
+            tabDatos.Margin = new Padding(3, 4, 3, 4);
+            tabDatos.Name = "tabDatos";
+            tabDatos.Padding = new Padding(11, 13, 11, 13);
+            tabDatos.Size = new Size(906, 634);
+            tabDatos.TabIndex = 0;
+            tabDatos.Text = "Base de Datos";
+            tabDatos.UseVisualStyleBackColor = true;
             // 
             // grpAutores
             // 
-            this.grpAutores.Controls.Add(this.dgvAutores);
-            this.grpAutores.Location = new System.Drawing.Point(400, 13);
-            this.grpAutores.Name = "grpAutores";
-            this.grpAutores.Size = new System.Drawing.Size(380, 446);
-            this.grpAutores.TabIndex = 1;
-            this.grpAutores.TabStop = false;
-            this.grpAutores.Text = "Autores Registrados (Ordenados)";
+            grpAutores.Controls.Add(dgvAutores);
+            grpAutores.Location = new Point(457, 17);
+            grpAutores.Margin = new Padding(3, 4, 3, 4);
+            grpAutores.Name = "grpAutores";
+            grpAutores.Padding = new Padding(3, 4, 3, 4);
+            grpAutores.Size = new Size(434, 595);
+            grpAutores.TabIndex = 1;
+            grpAutores.TabStop = false;
+            grpAutores.Text = "Autores Registrados (Ordenados)";
             // 
             // dgvAutores
             // 
-            this.dgvAutores.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvAutores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvAutores.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvAutores.Location = new System.Drawing.Point(3, 19);
-            this.dgvAutores.Name = "dgvAutores";
-            this.dgvAutores.RowHeadersVisible = false;
-            this.dgvAutores.Size = new System.Drawing.Size(374, 424);
-            this.dgvAutores.TabIndex = 0;
+            dgvAutores.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgvAutores.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvAutores.Dock = DockStyle.Fill;
+            dgvAutores.Location = new Point(3, 24);
+            dgvAutores.Margin = new Padding(3, 4, 3, 4);
+            dgvAutores.Name = "dgvAutores";
+            dgvAutores.RowHeadersVisible = false;
+            dgvAutores.RowHeadersWidth = 51;
+            dgvAutores.Size = new Size(428, 567);
+            dgvAutores.TabIndex = 0;
             // 
             // grpLibros
             // 
-            this.grpLibros.Controls.Add(this.dgvLibros);
-            this.grpLibros.Location = new System.Drawing.Point(13, 13);
-            this.grpLibros.Name = "grpLibros";
-            this.grpLibros.Size = new System.Drawing.Size(380, 446);
-            this.grpLibros.TabIndex = 0;
-            this.grpLibros.TabStop = false;
-            this.grpLibros.Text = "Libros Disponibles";
+            grpLibros.Controls.Add(dgvLibros);
+            grpLibros.Location = new Point(15, 17);
+            grpLibros.Margin = new Padding(3, 4, 3, 4);
+            grpLibros.Name = "grpLibros";
+            grpLibros.Padding = new Padding(3, 4, 3, 4);
+            grpLibros.Size = new Size(434, 595);
+            grpLibros.TabIndex = 0;
+            grpLibros.TabStop = false;
+            grpLibros.Text = "Libros Disponibles";
             // 
             // dgvLibros
             // 
-            this.dgvLibros.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvLibros.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvLibros.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvLibros.Location = new System.Drawing.Point(3, 19);
-            this.dgvLibros.Name = "dgvLibros";
-            this.dgvLibros.RowHeadersVisible = false;
-            this.dgvLibros.Size = new System.Drawing.Size(374, 424);
-            this.dgvLibros.TabIndex = 0;
+            dgvLibros.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgvLibros.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvLibros.Dock = DockStyle.Fill;
+            dgvLibros.Location = new Point(3, 24);
+            dgvLibros.Margin = new Padding(3, 4, 3, 4);
+            dgvLibros.Name = "dgvLibros";
+            dgvLibros.RowHeadersVisible = false;
+            dgvLibros.RowHeadersWidth = 51;
+            dgvLibros.Size = new Size(428, 567);
+            dgvLibros.TabIndex = 0;
             // 
             // tabLineal
             // 
-            this.tabLineal.Controls.Add(this.lblResultadoLineal);
-            this.tabLineal.Controls.Add(this.btnBusquedaLineal);
-            this.tabLineal.Controls.Add(this.txtBusquedaLineal);
-            this.tabLineal.Controls.Add(this.lblInstruccionLineal);
-            this.tabLineal.Location = new System.Drawing.Point(4, 24);
-            this.tabLineal.Name = "tabLineal";
-            this.tabLineal.Padding = new System.Windows.Forms.Padding(30);
-            this.tabLineal.Size = new System.Drawing.Size(792, 472);
-            this.tabLineal.TabIndex = 1;
-            this.tabLineal.Text = "Búsqueda Lineal (Libros)";
-            this.tabLineal.UseVisualStyleBackColor = true;
+            tabLineal.Controls.Add(lblResultadoLineal);
+            tabLineal.Controls.Add(btnBusquedaLineal);
+            tabLineal.Controls.Add(txtBusquedaLineal);
+            tabLineal.Controls.Add(lblInstruccionLineal);
+            tabLineal.Location = new Point(4, 29);
+            tabLineal.Margin = new Padding(3, 4, 3, 4);
+            tabLineal.Name = "tabLineal";
+            tabLineal.Padding = new Padding(34, 40, 34, 40);
+            tabLineal.Size = new Size(906, 634);
+            tabLineal.TabIndex = 1;
+            tabLineal.Text = "Búsqueda Lineal (Libros)";
+            tabLineal.UseVisualStyleBackColor = true;
             // 
             // lblResultadoLineal
             // 
-            this.lblResultadoLineal.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.lblResultadoLineal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblResultadoLineal.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblResultadoLineal.Location = new System.Drawing.Point(33, 150);
-            this.lblResultadoLineal.Name = "lblResultadoLineal";
-            this.lblResultadoLineal.Padding = new System.Windows.Forms.Padding(10);
-            this.lblResultadoLineal.Size = new System.Drawing.Size(726, 100);
-            this.lblResultadoLineal.TabIndex = 3;
-            this.lblResultadoLineal.Text = "Los resultados aparecerán aquí...";
-            this.lblResultadoLineal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            lblResultadoLineal.BackColor = Color.WhiteSmoke;
+            lblResultadoLineal.BorderStyle = BorderStyle.FixedSingle;
+            lblResultadoLineal.Font = new Font("Segoe UI", 12F);
+            lblResultadoLineal.Location = new Point(38, 200);
+            lblResultadoLineal.Name = "lblResultadoLineal";
+            lblResultadoLineal.Padding = new Padding(11, 13, 11, 13);
+            lblResultadoLineal.Size = new Size(829, 133);
+            lblResultadoLineal.TabIndex = 3;
+            lblResultadoLineal.Text = "Los resultados aparecerán aquí...";
+            lblResultadoLineal.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // btnBusquedaLineal
             // 
-            this.btnBusquedaLineal.BackColor = System.Drawing.Color.SteelBlue;
-            this.btnBusquedaLineal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBusquedaLineal.ForeColor = System.Drawing.Color.White;
-            this.btnBusquedaLineal.Location = new System.Drawing.Point(539, 78);
-            this.btnBusquedaLineal.Name = "btnBusquedaLineal";
-            this.btnBusquedaLineal.Size = new System.Drawing.Size(120, 29);
-            this.btnBusquedaLineal.TabIndex = 2;
-            this.btnBusquedaLineal.Text = "Buscar";
-            this.btnBusquedaLineal.UseVisualStyleBackColor = false;
-            this.btnBusquedaLineal.Click += new System.EventHandler(this.btnBusquedaLineal_Click);
+            btnBusquedaLineal.BackColor = Color.SteelBlue;
+            btnBusquedaLineal.FlatStyle = FlatStyle.Flat;
+            btnBusquedaLineal.ForeColor = Color.White;
+            btnBusquedaLineal.Location = new Point(616, 104);
+            btnBusquedaLineal.Margin = new Padding(3, 4, 3, 4);
+            btnBusquedaLineal.Name = "btnBusquedaLineal";
+            btnBusquedaLineal.Size = new Size(137, 39);
+            btnBusquedaLineal.TabIndex = 2;
+            btnBusquedaLineal.Text = "Buscar";
+            btnBusquedaLineal.UseVisualStyleBackColor = false;
+            btnBusquedaLineal.Click += btnBusquedaLineal_Click;
             // 
             // txtBusquedaLineal
             // 
-            this.txtBusquedaLineal.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtBusquedaLineal.Location = new System.Drawing.Point(133, 78);
-            this.txtBusquedaLineal.Name = "txtBusquedaLineal";
-            this.txtBusquedaLineal.PlaceholderText = "Ingrese el nombre del libro exacto...";
-            this.txtBusquedaLineal.Size = new System.Drawing.Size(400, 29);
-            this.txtBusquedaLineal.TabIndex = 1;
+            txtBusquedaLineal.Font = new Font("Segoe UI", 12F);
+            txtBusquedaLineal.Location = new Point(152, 104);
+            txtBusquedaLineal.Margin = new Padding(3, 4, 3, 4);
+            txtBusquedaLineal.Name = "txtBusquedaLineal";
+            txtBusquedaLineal.PlaceholderText = "Ingrese el nombre del libro exacto...";
+            txtBusquedaLineal.Size = new Size(457, 34);
+            txtBusquedaLineal.TabIndex = 1;
             // 
             // lblInstruccionLineal
             // 
-            this.lblInstruccionLineal.AutoSize = true;
-            this.lblInstruccionLineal.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblInstruccionLineal.Location = new System.Drawing.Point(133, 30);
-            this.lblInstruccionLineal.Name = "lblInstruccionLineal";
-            this.lblInstruccionLineal.Size = new System.Drawing.Size(306, 25);
-            this.lblInstruccionLineal.TabIndex = 0;
-            this.lblInstruccionLineal.Text = "Búsqueda Lineal: Encontrar Libro";
+            lblInstruccionLineal.AutoSize = true;
+            lblInstruccionLineal.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
+            lblInstruccionLineal.Location = new Point(152, 40);
+            lblInstruccionLineal.Name = "lblInstruccionLineal";
+            lblInstruccionLineal.Size = new Size(392, 32);
+            lblInstruccionLineal.TabIndex = 0;
+            lblInstruccionLineal.Text = "Búsqueda Lineal: Encontrar Libro";
             // 
             // tabBinaria
             // 
-            this.tabBinaria.Controls.Add(this.lblNotaBinaria);
-            this.tabBinaria.Controls.Add(this.lblResultadoBinaria);
-            this.tabBinaria.Controls.Add(this.btnBusquedaBinaria);
-            this.tabBinaria.Controls.Add(this.txtBusquedaBinaria);
-            this.tabBinaria.Controls.Add(this.lblInstruccionBinaria);
-            this.tabBinaria.Location = new System.Drawing.Point(4, 24);
-            this.tabBinaria.Name = "tabBinaria";
-            this.tabBinaria.Size = new System.Drawing.Size(792, 472);
-            this.tabBinaria.TabIndex = 2;
-            this.tabBinaria.Text = "Búsqueda Binaria (Autores)";
-            this.tabBinaria.UseVisualStyleBackColor = true;
+            tabBinaria.Controls.Add(lblNotaBinaria);
+            tabBinaria.Controls.Add(lblResultadoBinaria);
+            tabBinaria.Controls.Add(btnBusquedaBinaria);
+            tabBinaria.Controls.Add(txtBusquedaBinaria);
+            tabBinaria.Controls.Add(lblInstruccionBinaria);
+            tabBinaria.Location = new Point(4, 29);
+            tabBinaria.Margin = new Padding(3, 4, 3, 4);
+            tabBinaria.Name = "tabBinaria";
+            tabBinaria.Size = new Size(906, 634);
+            tabBinaria.TabIndex = 2;
+            tabBinaria.Text = "Búsqueda Binaria (Autores)";
+            tabBinaria.UseVisualStyleBackColor = true;
             // 
             // lblNotaBinaria
             // 
-            this.lblNotaBinaria.AutoSize = true;
-            this.lblNotaBinaria.ForeColor = System.Drawing.Color.DimGray;
-            this.lblNotaBinaria.Location = new System.Drawing.Point(133, 55);
-            this.lblNotaBinaria.Name = "lblNotaBinaria";
-            this.lblNotaBinaria.Size = new System.Drawing.Size(309, 15);
-            this.lblNotaBinaria.TabIndex = 4;
-            this.lblNotaBinaria.Text = "* Requiere que la lista esté ordenada alfabéticamente.";
+            lblNotaBinaria.AutoSize = true;
+            lblNotaBinaria.ForeColor = Color.DimGray;
+            lblNotaBinaria.Location = new Point(152, 73);
+            lblNotaBinaria.Name = "lblNotaBinaria";
+            lblNotaBinaria.Size = new Size(368, 20);
+            lblNotaBinaria.TabIndex = 4;
+            lblNotaBinaria.Text = "* Requiere que la lista esté ordenada alfabéticamente.";
             // 
             // lblResultadoBinaria
             // 
-            this.lblResultadoBinaria.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.lblResultadoBinaria.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblResultadoBinaria.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblResultadoBinaria.Location = new System.Drawing.Point(33, 150);
-            this.lblResultadoBinaria.Name = "lblResultadoBinaria";
-            this.lblResultadoBinaria.Padding = new System.Windows.Forms.Padding(10);
-            this.lblResultadoBinaria.Size = new System.Drawing.Size(726, 100);
-            this.lblResultadoBinaria.TabIndex = 3;
-            this.lblResultadoBinaria.Text = "Los resultados aparecerán aquí...";
-            this.lblResultadoBinaria.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            lblResultadoBinaria.BackColor = Color.WhiteSmoke;
+            lblResultadoBinaria.BorderStyle = BorderStyle.FixedSingle;
+            lblResultadoBinaria.Font = new Font("Segoe UI", 12F);
+            lblResultadoBinaria.Location = new Point(38, 200);
+            lblResultadoBinaria.Name = "lblResultadoBinaria";
+            lblResultadoBinaria.Padding = new Padding(11, 13, 11, 13);
+            lblResultadoBinaria.Size = new Size(829, 133);
+            lblResultadoBinaria.TabIndex = 3;
+            lblResultadoBinaria.Text = "Los resultados aparecerán aquí...";
+            lblResultadoBinaria.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // btnBusquedaBinaria
             // 
-            this.btnBusquedaBinaria.BackColor = System.Drawing.Color.SeaGreen;
-            this.btnBusquedaBinaria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBusquedaBinaria.ForeColor = System.Drawing.Color.White;
-            this.btnBusquedaBinaria.Location = new System.Drawing.Point(539, 85);
-            this.btnBusquedaBinaria.Name = "btnBusquedaBinaria";
-            this.btnBusquedaBinaria.Size = new System.Drawing.Size(120, 29);
-            this.btnBusquedaBinaria.TabIndex = 2;
-            this.btnBusquedaBinaria.Text = "Buscar Binario";
-            this.btnBusquedaBinaria.UseVisualStyleBackColor = false;
-            this.btnBusquedaBinaria.Click += new System.EventHandler(this.btnBusquedaBinaria_Click);
+            btnBusquedaBinaria.BackColor = Color.SeaGreen;
+            btnBusquedaBinaria.FlatStyle = FlatStyle.Flat;
+            btnBusquedaBinaria.ForeColor = Color.White;
+            btnBusquedaBinaria.Location = new Point(616, 113);
+            btnBusquedaBinaria.Margin = new Padding(3, 4, 3, 4);
+            btnBusquedaBinaria.Name = "btnBusquedaBinaria";
+            btnBusquedaBinaria.Size = new Size(137, 39);
+            btnBusquedaBinaria.TabIndex = 2;
+            btnBusquedaBinaria.Text = "Buscar Binario";
+            btnBusquedaBinaria.UseVisualStyleBackColor = false;
+            btnBusquedaBinaria.Click += btnBusquedaBinaria_Click;
             // 
             // txtBusquedaBinaria
             // 
-            this.txtBusquedaBinaria.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtBusquedaBinaria.Location = new System.Drawing.Point(133, 85);
-            this.txtBusquedaBinaria.Name = "txtBusquedaBinaria";
-            this.txtBusquedaBinaria.PlaceholderText = "Ingrese el nombre del autor...";
-            this.txtBusquedaBinaria.Size = new System.Drawing.Size(400, 29);
-            this.txtBusquedaBinaria.TabIndex = 1;
+            txtBusquedaBinaria.Font = new Font("Segoe UI", 12F);
+            txtBusquedaBinaria.Location = new Point(152, 113);
+            txtBusquedaBinaria.Margin = new Padding(3, 4, 3, 4);
+            txtBusquedaBinaria.Name = "txtBusquedaBinaria";
+            txtBusquedaBinaria.PlaceholderText = "Ingrese el nombre del autor...";
+            txtBusquedaBinaria.Size = new Size(457, 34);
+            txtBusquedaBinaria.TabIndex = 1;
             // 
             // lblInstruccionBinaria
             // 
-            this.lblInstruccionBinaria.AutoSize = true;
-            this.lblInstruccionBinaria.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblInstruccionBinaria.Location = new System.Drawing.Point(133, 30);
-            this.lblInstruccionBinaria.Name = "lblInstruccionBinaria";
-            this.lblInstruccionBinaria.Size = new System.Drawing.Size(320, 25);
-            this.lblInstruccionBinaria.TabIndex = 0;
-            this.lblInstruccionBinaria.Text = "Búsqueda Binaria: Encontrar Autor";
+            lblInstruccionBinaria.AutoSize = true;
+            lblInstruccionBinaria.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
+            lblInstruccionBinaria.Location = new Point(152, 40);
+            lblInstruccionBinaria.Name = "lblInstruccionBinaria";
+            lblInstruccionBinaria.Size = new Size(412, 32);
+            lblInstruccionBinaria.TabIndex = 0;
+            lblInstruccionBinaria.Text = "Búsqueda Binaria: Encontrar Autor";
             // 
             // tabAnalisis
             // 
-            this.tabAnalisis.Controls.Add(this.btnAnalizarAnio);
-            this.tabAnalisis.Controls.Add(this.grpResultadosAnalisis);
-            this.tabAnalisis.Location = new System.Drawing.Point(4, 24);
-            this.tabAnalisis.Name = "tabAnalisis";
-            this.tabAnalisis.Size = new System.Drawing.Size(792, 472);
-            this.tabAnalisis.TabIndex = 3;
-            this.tabAnalisis.Text = "Análisis (Antiguo/Reciente)";
-            this.tabAnalisis.UseVisualStyleBackColor = true;
+            tabAnalisis.Controls.Add(btnAnalizarAnio);
+            tabAnalisis.Controls.Add(grpResultadosAnalisis);
+            tabAnalisis.Location = new Point(4, 29);
+            tabAnalisis.Margin = new Padding(3, 4, 3, 4);
+            tabAnalisis.Name = "tabAnalisis";
+            tabAnalisis.Size = new Size(906, 634);
+            tabAnalisis.TabIndex = 3;
+            tabAnalisis.Text = "Análisis (Antiguo/Reciente)";
+            tabAnalisis.UseVisualStyleBackColor = true;
             // 
             // btnAnalizarAnio
             // 
-            this.btnAnalizarAnio.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.btnAnalizarAnio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAnalizarAnio.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnAnalizarAnio.ForeColor = System.Drawing.Color.White;
-            this.btnAnalizarAnio.Location = new System.Drawing.Point(246, 60);
-            this.btnAnalizarAnio.Name = "btnAnalizarAnio";
-            this.btnAnalizarAnio.Size = new System.Drawing.Size(300, 50);
-            this.btnAnalizarAnio.TabIndex = 1;
-            this.btnAnalizarAnio.Text = "Analizar Colección";
-            this.btnAnalizarAnio.UseVisualStyleBackColor = false;
-            this.btnAnalizarAnio.Click += new System.EventHandler(this.btnAnalizarAnio_Click);
+            btnAnalizarAnio.BackColor = Color.DarkSlateBlue;
+            btnAnalizarAnio.FlatStyle = FlatStyle.Flat;
+            btnAnalizarAnio.Font = new Font("Segoe UI", 12F);
+            btnAnalizarAnio.ForeColor = Color.White;
+            btnAnalizarAnio.Location = new Point(281, 80);
+            btnAnalizarAnio.Margin = new Padding(3, 4, 3, 4);
+            btnAnalizarAnio.Name = "btnAnalizarAnio";
+            btnAnalizarAnio.Size = new Size(343, 67);
+            btnAnalizarAnio.TabIndex = 1;
+            btnAnalizarAnio.Text = "Analizar Colección";
+            btnAnalizarAnio.UseVisualStyleBackColor = false;
+            btnAnalizarAnio.Click += btnAnalizarAnio_Click;
             // 
             // grpResultadosAnalisis
             // 
-            this.grpResultadosAnalisis.Controls.Add(this.lblLibroReciente);
-            this.grpResultadosAnalisis.Controls.Add(this.lblLibroAntiguo);
-            this.grpResultadosAnalisis.Location = new System.Drawing.Point(96, 140);
-            this.grpResultadosAnalisis.Name = "grpResultadosAnalisis";
-            this.grpResultadosAnalisis.Size = new System.Drawing.Size(600, 250);
-            this.grpResultadosAnalisis.TabIndex = 0;
-            this.grpResultadosAnalisis.TabStop = false;
-            this.grpResultadosAnalisis.Text = "Resultados del Análisis";
+            grpResultadosAnalisis.Controls.Add(lblLibroReciente);
+            grpResultadosAnalisis.Controls.Add(lblLibroAntiguo);
+            grpResultadosAnalisis.Location = new Point(110, 187);
+            grpResultadosAnalisis.Margin = new Padding(3, 4, 3, 4);
+            grpResultadosAnalisis.Name = "grpResultadosAnalisis";
+            grpResultadosAnalisis.Padding = new Padding(3, 4, 3, 4);
+            grpResultadosAnalisis.Size = new Size(686, 333);
+            grpResultadosAnalisis.TabIndex = 0;
+            grpResultadosAnalisis.TabStop = false;
+            grpResultadosAnalisis.Text = "Resultados del Análisis";
             // 
             // lblLibroReciente
             // 
-            this.lblLibroReciente.BackColor = System.Drawing.Color.Honeydew;
-            this.lblLibroReciente.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblLibroReciente.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblLibroReciente.ForeColor = System.Drawing.Color.DarkGreen;
-            this.lblLibroReciente.Location = new System.Drawing.Point(310, 50);
-            this.lblLibroReciente.Name = "lblLibroReciente";
-            this.lblLibroReciente.Padding = new System.Windows.Forms.Padding(10);
-            this.lblLibroReciente.Size = new System.Drawing.Size(250, 150);
-            this.lblLibroReciente.TabIndex = 1;
-            this.lblLibroReciente.Text = "Más Reciente: \n---";
-            this.lblLibroReciente.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            lblLibroReciente.BackColor = Color.Honeydew;
+            lblLibroReciente.BorderStyle = BorderStyle.FixedSingle;
+            lblLibroReciente.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
+            lblLibroReciente.ForeColor = Color.DarkGreen;
+            lblLibroReciente.Location = new Point(354, 67);
+            lblLibroReciente.Name = "lblLibroReciente";
+            lblLibroReciente.Padding = new Padding(11, 13, 11, 13);
+            lblLibroReciente.Size = new Size(285, 199);
+            lblLibroReciente.TabIndex = 1;
+            lblLibroReciente.Text = "Más Reciente: \n---";
+            lblLibroReciente.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // lblLibroAntiguo
             // 
-            this.lblLibroAntiguo.BackColor = System.Drawing.Color.MistyRose;
-            this.lblLibroAntiguo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblLibroAntiguo.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblLibroAntiguo.ForeColor = System.Drawing.Color.Maroon;
-            this.lblLibroAntiguo.Location = new System.Drawing.Point(40, 50);
-            this.lblLibroAntiguo.Name = "lblLibroAntiguo";
-            this.lblLibroAntiguo.Padding = new System.Windows.Forms.Padding(10);
-            this.lblLibroAntiguo.Size = new System.Drawing.Size(250, 150);
-            this.lblLibroAntiguo.TabIndex = 0;
-            this.lblLibroAntiguo.Text = "Más Antiguo: \n---";
-            this.lblLibroAntiguo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            lblLibroAntiguo.BackColor = Color.MistyRose;
+            lblLibroAntiguo.BorderStyle = BorderStyle.FixedSingle;
+            lblLibroAntiguo.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
+            lblLibroAntiguo.ForeColor = Color.Maroon;
+            lblLibroAntiguo.Location = new Point(46, 67);
+            lblLibroAntiguo.Name = "lblLibroAntiguo";
+            lblLibroAntiguo.Padding = new Padding(11, 13, 11, 13);
+            lblLibroAntiguo.Size = new Size(285, 199);
+            lblLibroAntiguo.TabIndex = 0;
+            lblLibroAntiguo.Text = "Más Antiguo: \n---";
+            lblLibroAntiguo.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // tabDescripcion
             // 
-            this.tabDescripcion.Controls.Add(this.lstResultadosDescripcion);
-            this.tabDescripcion.Controls.Add(this.btnBuscarDescripcion);
-            this.tabDescripcion.Controls.Add(this.txtDescripcion);
-            this.tabDescripcion.Controls.Add(this.lblInstruccionDesc);
-            this.tabDescripcion.Location = new System.Drawing.Point(4, 24);
-            this.tabDescripcion.Name = "tabDescripcion";
-            this.tabDescripcion.Size = new System.Drawing.Size(792, 472);
-            this.tabDescripcion.TabIndex = 4;
-            this.tabDescripcion.Text = "Buscar en Descripción";
-            this.tabDescripcion.UseVisualStyleBackColor = true;
+            tabDescripcion.Controls.Add(lstResultadosDescripcion);
+            tabDescripcion.Controls.Add(btnBuscarDescripcion);
+            tabDescripcion.Controls.Add(txtDescripcion);
+            tabDescripcion.Controls.Add(lblInstruccionDesc);
+            tabDescripcion.Location = new Point(4, 29);
+            tabDescripcion.Margin = new Padding(3, 4, 3, 4);
+            tabDescripcion.Name = "tabDescripcion";
+            tabDescripcion.Size = new Size(906, 634);
+            tabDescripcion.TabIndex = 4;
+            tabDescripcion.Text = "Buscar en Descripción";
+            tabDescripcion.UseVisualStyleBackColor = true;
             // 
             // lstResultadosDescripcion
             // 
-            this.lstResultadosDescripcion.FormattingEnabled = true;
-            this.lstResultadosDescripcion.ItemHeight = 15;
-            this.lstResultadosDescripcion.Location = new System.Drawing.Point(133, 130);
-            this.lstResultadosDescripcion.Name = "lstResultadosDescripcion";
-            this.lstResultadosDescripcion.Size = new System.Drawing.Size(526, 289);
-            this.lstResultadosDescripcion.TabIndex = 3;
+            lstResultadosDescripcion.FormattingEnabled = true;
+            lstResultadosDescripcion.Location = new Point(152, 173);
+            lstResultadosDescripcion.Margin = new Padding(3, 4, 3, 4);
+            lstResultadosDescripcion.Name = "lstResultadosDescripcion";
+            lstResultadosDescripcion.Size = new Size(601, 384);
+            lstResultadosDescripcion.TabIndex = 3;
             // 
             // btnBuscarDescripcion
             // 
-            this.btnBuscarDescripcion.BackColor = System.Drawing.Color.SlateGray;
-            this.btnBuscarDescripcion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBuscarDescripcion.ForeColor = System.Drawing.Color.White;
-            this.btnBuscarDescripcion.Location = new System.Drawing.Point(539, 80);
-            this.btnBuscarDescripcion.Name = "btnBuscarDescripcion";
-            this.btnBuscarDescripcion.Size = new System.Drawing.Size(120, 29);
-            this.btnBuscarDescripcion.TabIndex = 2;
-            this.btnBuscarDescripcion.Text = "Buscar Texto";
-            this.btnBuscarDescripcion.UseVisualStyleBackColor = false;
-            this.btnBuscarDescripcion.Click += new System.EventHandler(this.btnBuscarDescripcion_Click);
+            btnBuscarDescripcion.BackColor = Color.SlateGray;
+            btnBuscarDescripcion.FlatStyle = FlatStyle.Flat;
+            btnBuscarDescripcion.ForeColor = Color.White;
+            btnBuscarDescripcion.Location = new Point(616, 107);
+            btnBuscarDescripcion.Margin = new Padding(3, 4, 3, 4);
+            btnBuscarDescripcion.Name = "btnBuscarDescripcion";
+            btnBuscarDescripcion.Size = new Size(137, 39);
+            btnBuscarDescripcion.TabIndex = 2;
+            btnBuscarDescripcion.Text = "Buscar Texto";
+            btnBuscarDescripcion.UseVisualStyleBackColor = false;
+            btnBuscarDescripcion.Click += btnBuscarDescripcion_Click;
             // 
             // txtDescripcion
             // 
-            this.txtDescripcion.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtDescripcion.Location = new System.Drawing.Point(133, 80);
-            this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.PlaceholderText = "Palabra clave (ej. soledad, política, amor)...";
-            this.txtDescripcion.Size = new System.Drawing.Size(400, 29);
-            this.txtDescripcion.TabIndex = 1;
+            txtDescripcion.Font = new Font("Segoe UI", 12F);
+            txtDescripcion.Location = new Point(152, 107);
+            txtDescripcion.Margin = new Padding(3, 4, 3, 4);
+            txtDescripcion.Name = "txtDescripcion";
+            txtDescripcion.PlaceholderText = "Palabra clave (ej. soledad, política, amor)...";
+            txtDescripcion.Size = new Size(457, 34);
+            txtDescripcion.TabIndex = 1;
             // 
             // lblInstruccionDesc
             // 
-            this.lblInstruccionDesc.AutoSize = true;
-            this.lblInstruccionDesc.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblInstruccionDesc.Location = new System.Drawing.Point(133, 30);
-            this.lblInstruccionDesc.Name = "lblInstruccionDesc";
-            this.lblInstruccionDesc.Size = new System.Drawing.Size(325, 25);
-            this.lblInstruccionDesc.TabIndex = 0;
-            this.lblInstruccionDesc.Text = "Búsqueda Parcial en Descripciones";
+            lblInstruccionDesc.AutoSize = true;
+            lblInstruccionDesc.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
+            lblInstruccionDesc.Location = new Point(152, 40);
+            lblInstruccionDesc.Name = "lblInstruccionDesc";
+            lblInstruccionDesc.Size = new Size(410, 32);
+            lblInstruccionDesc.TabIndex = 0;
+            lblInstruccionDesc.Text = "Búsqueda Parcial en Descripciones";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 500);
-            this.Controls.Add(this.tabControlPrincipal);
-            this.Name = "Form1";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Sistema de Búsqueda Bibliotecaria";
-            this.tabControlPrincipal.ResumeLayout(false);
-            this.tabDatos.ResumeLayout(false);
-            this.grpAutores.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvAutores)).EndInit();
-            this.grpLibros.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvLibros)).EndInit();
-            this.tabLineal.ResumeLayout(false);
-            this.tabLineal.PerformLayout();
-            this.tabBinaria.ResumeLayout(false);
-            this.tabBinaria.PerformLayout();
-            this.tabAnalisis.ResumeLayout(false);
-            this.grpResultadosAnalisis.ResumeLayout(false);
-            this.tabDescripcion.ResumeLayout(false);
-            this.tabDescripcion.PerformLayout();
-            this.ResumeLayout(false);
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(914, 667);
+            Controls.Add(tabControlPrincipal);
+            Margin = new Padding(3, 4, 3, 4);
+            Name = "Form1";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Sistema de Búsqueda Bibliotecaria";
+            tabControlPrincipal.ResumeLayout(false);
+            tabDatos.ResumeLayout(false);
+            grpAutores.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dgvAutores).EndInit();
+            grpLibros.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dgvLibros).EndInit();
+            tabLineal.ResumeLayout(false);
+            tabLineal.PerformLayout();
+            tabBinaria.ResumeLayout(false);
+            tabBinaria.PerformLayout();
+            tabAnalisis.ResumeLayout(false);
+            grpResultadosAnalisis.ResumeLayout(false);
+            tabDescripcion.ResumeLayout(false);
+            tabDescripcion.PerformLayout();
+            ResumeLayout(false);
 
         }
 
