@@ -88,7 +88,43 @@ namespace BibliotecaDigital
 
         private void btnBusquedaBinaria_Click(object sender, EventArgs e)
         {
+            string autorBusqueda = txtBusquedaBinaria.Text.Trim();
 
+            if (string.IsNullOrEmpty(autorBusqueda)) return;
+
+            int bajo = 0;
+            int alto = listaAutores.Count - 1;
+            int centro;
+            Autor encontrado = null;
+            int iteraciones = 0;
+
+            while (bajo <= alto)
+            {
+                iteraciones++;
+                centro = (bajo + alto) / 2;
+
+                // Comparamos alfabéticamente
+                int comparacion = string.Compare(listaAutores[centro].Nombre, autorBusqueda, StringComparison.OrdinalIgnoreCase);
+
+                if (comparacion == 0) // Encontrado
+                {
+                    encontrado = listaAutores[centro];
+                    break;
+                }
+                else if (comparacion < 0) // El buscado está en la mitad superior
+                {
+                    bajo = centro + 1;
+                }
+                else // El buscado está en la mitad inferior
+                {
+                    alto = centro - 1;
+                }
+            }
+
+            if (encontrado != null)
+                lblResultadoBinaria.Text = $"Autor ID {encontrado.Id}: {encontrado.Nombre}\nPasos realizados: {iteraciones}";
+            else
+                lblResultadoBinaria.Text = $"Autor no encontrado en la base de datos.\nPasos realizados: {iteraciones}";
         }
 
         private void btnOrdenamientoBurbuja_Click(object sender, EventArgs e)
